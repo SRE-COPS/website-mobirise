@@ -12,8 +12,8 @@ if [ "$current_branch" != "$target_branch" ]; then
   exit 1
 fi
 
-/usr/bin/scp -P 65002 -r assets u845124482@89.116.53.206:/home/u845124482/public_html/devsrecops/
-/usr/bin/scp -P 65002 index.html u845124482@89.116.53.206:/home/u845124482/public_html/devsrecops/
+/usr/bin/scp -P 65002 -r /Users/D073341/work/sre-cops/website-mobirise/Dev/* u845124482@89.116.53.206:/home/u845124482/public_html/devsrecops/
+#/usr/bin/scp -P 65002 index.html u845124482@89.116.53.206:/home/u845124482/public_html/devsrecops/
 
 if [ $? -eq 0 ]; then
   echo "Folder copied successfully to remote machine."
